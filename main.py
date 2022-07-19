@@ -1,6 +1,6 @@
 import os
 
-#os.system('1.1_first_script.py')
+#os.system('1_1_first_script.py')
 
 #os.system('1.6_search_with_selenium.py')
 
@@ -21,6 +21,6 @@ selenium_env\Scripts\activate.bat # activate the virtual environment
 
 pip install selenium # install selenium of not found
 
-python 1.1_first_script.py # execute file
+python 1_1_first_script.py # execute file
 
 '''

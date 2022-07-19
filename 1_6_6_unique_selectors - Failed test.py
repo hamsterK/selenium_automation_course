@@ -8,10 +8,12 @@ browser = webdriver.Chrome()
 try:
     browser.get(link)
 
-    numbers = ['first', 'second', 'third']
-    for num in numbers:
-        field = browser.find_element(By.CSS_SELECTOR, f'.form-control.{num}:required')
-        field.send_keys('answer')
+    field = browser.find_element(By.CSS_SELECTOR, f'.form-control.first:required')
+    field.send_keys('answer')
+    field = browser.find_element(By.CSS_SELECTOR, f'.form-control.second:required')
+    field.send_keys('answer')
+    field = browser.find_element(By.CSS_SELECTOR, f'.form-control.third:required')
+    field.send_keys('answer')
 
     button = browser.find_element(By.CSS_SELECTOR, 'button.btn')
     button.click()
