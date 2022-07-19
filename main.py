@@ -24,3 +24,9 @@ pip install selenium # install selenium of not found
 python 1_1_first_script.py # execute file
 
 '''
+
+'''
+save packages and use in new test env:
+pip freeze > requirements.txt
+pip install -r requirements.txt
+'''
