@@ -18,6 +18,12 @@ def browser():
     browser.quit()
 
 
+@pytest.fixture(autouse=True)
+def prepare_data():
+    print()
+    print("preparing some critical data for every test")
+
+
 class TestMainPage1:
     def test_guest_should_see_login_link(self, browser):  # browser == fixture
         browser.get(link)
@@ -33,5 +39,5 @@ scope='function'/'class'/'module'/session
 fixture is applied to every function/class/etc
 
 autouse=False => fixture needs to be called manually ,
-if True - will be aaplied automatically according to the 'scope'
+if True - will be applied automatically according to the 'scope'
 '''
